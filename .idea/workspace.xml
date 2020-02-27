@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1c2ca95-5fd5-47f7-b5aa-7c30b93015d1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Pixel_Pals/Templates/registration/logged_out.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pixel_Pals/Templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pixel_Pals/backend/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pixel_Pals/backend/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pixel_Pals/backend/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pixel_Pals/backend/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
+            <state relative-caret-position="243">
+              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -74,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pixel_Pals/backend/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="364">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -89,8 +82,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="300">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#634#666#0" expanded="true" />
               </folding>
@@ -106,32 +99,47 @@
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pixel_Pals/backend/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" selection-start-column="30" selection-end-column="30" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Pixel_Pals/backend/admin.py" />
-        <option value="$PROJECT_DIR$/Pixel_Pals/backend/models.py" />
         <option value="$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/urls.py" />
         <option value="$PROJECT_DIR$/Pixel_Pals/Templates/registration/login.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/settings.py" />
         <option value="$PROJECT_DIR$/Pixel_Pals/Templates/registration/logged_out.html" />
         <option value="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_form.html" />
         <option value="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_done.html" />
         <option value="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_email.html" />
         <option value="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_confirm.html" />
         <option value="$PROJECT_DIR$/Pixel_Pals/Templates/registration/password_reset_complete.html" />
+        <option value="$PROJECT_DIR$/Pixel_Pals/backend/admin.py" />
+        <option value="$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/settings.py" />
+        <option value="$PROJECT_DIR$/Pixel_Pals/backend/models.py" />
       </list>
     </option>
   </component>
@@ -165,6 +173,12 @@
               <item name="Pixel_Pals" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pixel_Pals" type="462c0819:PsiDirectoryNode" />
               <item name="Pixel_Pals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pixel_Pals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pixel_Pals" type="462c0819:PsiDirectoryNode" />
+              <item name="Pixel_Pals" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pixel_Pals" type="b2602c69:ProjectViewProjectNode" />
@@ -237,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581023581505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added basic login / logout page. Will clean up further down the line">
+      <created>1582419084057</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582419084057</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -249,8 +270,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.328341" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23443224" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.32949308" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24236874" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -275,7 +296,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic Django with backend added" />
     <MESSAGE value=" Models started. Admin site doesn't work" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Models started. Admin site doesn't work" />
+    <MESSAGE value="Added basic login / logout page. Will clean up further down the line" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic login / logout page. Will clean up further down the line" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/settings.py">
@@ -507,36 +529,19 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/44b18d91-ba6c-40cd-bac4-103cd86ac0dc/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pixel_Pals/backend/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pixel_Pals/backend/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Pixel_Pals/backend/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pixel_Pals/backend/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pixel_Pals/backend/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="300">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#634#666#0" expanded="true" />
           </folding>
@@ -598,10 +603,30 @@
     <entry file="file://$PROJECT_DIR$/Pixel_Pals/Templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Pixel_Pals/backend/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Pixel_Pals/Pixel_Pals/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
+        <state relative-caret-position="243">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pixel_Pals/backend/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,15 +4,6 @@ from django.contrib.postgres.fields import JSONField
 
 # Create your models here.
 
-'''
-    Model for user
-    UserID
-    Name
-    Email
-    Password
-    Wishlist
-'''
-
 
 '''
     Graphics card
@@ -20,9 +11,11 @@ from django.contrib.postgres.fields import JSONField
         Model #
         Name
 '''
+
+
 class GraphicsCard(models.Model):
 
-    metaData = JSONField()
+    ModelID = models.CharField(max_length=25)
 
 
 
@@ -31,9 +24,14 @@ class GraphicsCard(models.Model):
     Price URL
     Avail
 '''
-class AmaxonPriceTable(models.Model):
 
-    metaData = JSONField()
+
+class AmazonPriceTable(GraphicsCard):
+
+   price = models.DecimalField(max_digits=25, decimal_places=2)
+   timestamp =models.DateTimeField()
+
+
 
 
 '''
