@@ -1,10 +1,15 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function MainSearch() {
     return (
-        <div className="searchPage">
-            <input type="text" id="mainSearchBar" placeholder="Search for cards.."></input>
-            <button type="button" id="mainSearchButton">Search</button>
-        </div>
+        <body>
+            <div>
+                <input type="search" id="mainSearchBar" placeholder="Search for cards.."></input>
+                <Link to="/cardDisplay">
+                    <button type="button" id="mainSearchButton">Search</button>
+                </Link>
+            </div>
+        </body>
     )
 }
