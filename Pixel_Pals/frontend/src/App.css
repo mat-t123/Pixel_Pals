@@ -2,6 +2,9 @@
     text-align: center;
 }
 
-.searchPage{
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background: lightblue;
 }

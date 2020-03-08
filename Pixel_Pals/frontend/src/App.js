@@ -8,8 +8,11 @@ function App() {
   return (
     <Router>
       <div className ="App">
-        <MainSearch />
-        <CardDisplay />
+        <nav>
+          <h1>CARD TRACKER</h1>
+        </nav>
+        <Route path="/mainSearch" component ={MainSearch}/>
+        <Route path="/cardDisplay" component ={CardDisplay}/> 
       </div>
     </Router>
   ); 
