@@ -1,0 +1,15 @@
+Price:
+    css: 'div.a-box.a-accordion-active a.a-accordion-row'
+    type: Text
+Price_second_format:
+    css: 'div#priceInsideBuyBox_feature_div.feature span.a-size-medium'
+    type: Text
+Available:
+    css: 'div.a-section div.feature div.a-section div.a-section span.a-size-medium'
+    type: Text
+Model_number:
+    css: 'table#productDetails_techSpec_section_2.a-keyvalue tr:nth-of-type(2) td.a-size-base'
+    type: Text
+Name:
+    css: 'h1.a-size-large span.a-size-large'
+    type: Text
