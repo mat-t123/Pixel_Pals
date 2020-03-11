@@ -12,11 +12,16 @@ from django.contrib.postgres.fields import JSONField
         Name
 '''
 
+class GraphicsCard_Manager(models.Manager):
+    def create_GraphicsCard(self, GraphicsCard):
+        GraphicsCard = self.create(GraphicsCard=GraphicsCard)
+        return GraphicsCard
 
 class GraphicsCard(models.Model):
 
     ModelID = models.CharField(max_length=25)
 
+    CardObject = GraphicsCard_Manager()
 
 
 '''
@@ -25,6 +30,10 @@ class GraphicsCard(models.Model):
     Avail
 '''
 
+class AmazonPrice_Manager(models.Manager):
+    def create_Price(self, AmazonPriceTable):
+        AmazonPriceTable = self.create(AmazonPriceTable=AmazonPriceTable)
+        return AmazonPriceTable
 
 class AmazonPriceTable(GraphicsCard):
 

@@ -6,6 +6,7 @@ import requests
 import json 
 import argparse
 import sys
+from .models import *
 
 
 
@@ -40,3 +41,6 @@ print(args)
 print (data)
 
 
+#Makes entry in table idk if it works
+
+#Card_Entry = AmazonPrice_Manager.create()

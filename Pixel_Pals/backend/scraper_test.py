@@ -3,7 +3,8 @@ import json
 import requests
 import sys
 import argparse
-#import amazon_scraper
+#\import amazon_scraper
+from .models import *
 
 #cmd sample input "python scraper_url.py DUAL-GTX1660S-O6G-EVO amazon DUAL-GTX1660S-O6G-EVO newegg"
 #after .py - arguments are keywords for google search, above example uses Manufact #, website keys
@@ -59,4 +60,8 @@ for i in range(0, 2):
         print("Error caught")
         print(argument[i])
         #run error url handling
-        
+
+
+#Makes entry in table idk if it works
+
+#Card_Entry = AmazonPrice_Manager.create()
