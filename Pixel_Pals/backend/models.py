@@ -39,6 +39,7 @@ class AmazonPriceTable(GraphicsCard):
 
    price = models.DecimalField(max_digits=25, decimal_places=2)
    timestamp =models.DateTimeField()
+   availablity = models.BooleanField()
 
 
 
