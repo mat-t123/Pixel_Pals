@@ -1,0 +1,30 @@
+.App{
+    text-align: center;
+}
+
+.main-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: #444d52;
+    color: white;
+}
+
+.searchPage{
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.results-card-info{
+    width: 100%;
+    background: #cce3e8;
+}
