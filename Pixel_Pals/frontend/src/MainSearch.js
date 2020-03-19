@@ -9,6 +9,6 @@ export default function MainSearch() {
             <Link to="/cardDisplay">
                 <button type="button" id="mainSearchButton">Search</button>
             </Link>
-        </div>
+        </div> 
     )
 }
