@@ -11,12 +11,13 @@ export default function CardDisplay() {
     ]
 
 
-
     return (
         <div className="card-result-container">
             <h3>Card Result Page</h3>
             <div className="results-card-info">
-                <div>card image</div>
+                <div>
+                    <img src="/../rsc/gcard.jpg"></img>
+                </div>
                 <div>{cards[0].name} </div>
             </div>
             <div className="card-graph-container">

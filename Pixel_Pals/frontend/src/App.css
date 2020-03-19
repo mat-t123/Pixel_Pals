@@ -24,6 +24,11 @@
     list-style: none;
 }
 
+
+.card-graph-container{
+    background: #7698a6;
+}
+
 .results-card-info{
     width: 100%;
     background: #cce3e8;
