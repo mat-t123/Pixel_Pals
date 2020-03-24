@@ -5,7 +5,7 @@ export default function CardDisplay() {
 
     const cards = [
         {
-            card_id: "the first card",
+            card_id: "MD-1230",
             name: "Titan GFX 20"
         } 
     ]
@@ -24,11 +24,15 @@ export default function CardDisplay() {
                         <img width="190" alt="Card Picture" src="/gcard.jpg"/>
                     </td>
                     <td className="card-details">
-                        <p className="card-name">Card Name</p>
+                        <p className="card-name">Card Name: {cards[0].name}</p>
                         <p className="card-details">Card Details</p>
-                        <button >Add to Watchlist</button>
                     </td>
                 </tr>
+                
+                    <tr className="button-container">
+                        <button className="watchlist-button">Add to Watchlist</button>
+                    </tr>
+                
             </tbody>
         </table>
     </div>
