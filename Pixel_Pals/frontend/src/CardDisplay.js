@@ -5,25 +5,36 @@ export default function CardDisplay() {
 
     const cards = [
         {
-            card_id: "the first card",
+            card_id: "MD-1230",
             name: "Titan GFX 20"
-        }
+        } 
     ]
 
 
-
-    return (
-        <div className="card-result-container">
-            <h3>Card Result Page</h3>
-            <div className="results-card-info">
-                <div>card image</div>
-                <div>{cards[0].name} </div>
-            </div>
-            <div className="card-graph-container">
-                <div>Card Graph from Amazon</div>
-                <div>Card Graph from NewEgg</div>
-            </div>
-            <button>Add to watchlist</button>
-        </div>
+    return ( 
+    <div>
+        <h3>Card Result Page</h3>
+        <table className="card-result-container">
+            <tbody>
+                {/* This is a table row */}
+                <tr>
+                    {/* This is a table cell */}
+                    <td className="card-image-container">
+                        {/*TODO: Create placeholder image if card has no picture*/}
+                        <img width="190" alt="Card Picture" src="/gcard.jpg"/>
+                    </td>
+                    <td className="card-details">
+                        <p className="card-name">Card Name: {cards[0].name}</p>
+                        <p className="card-details">Card Details</p>
+                    </td>
+                </tr>
+                
+                    <tr className="button-container">
+                        <button className="watchlist-button">Add to Watchlist</button>
+                    </tr>
+                
+            </tbody>
+        </table>
+    </div>
     )
 }
