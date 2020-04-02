@@ -6,7 +6,7 @@ import requests
 import json 
 import argparse
 import sys
-#from .models import *
+
 
 
 def scrapper():
