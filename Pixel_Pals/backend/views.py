@@ -7,5 +7,5 @@ from .models import *
 
 class AmazonView(viewsets.ModelViewSet):
     serializer_class = amazonSerializer
-    #queryset = AmazonPrice_Manager.objects.all()
+    queryset = AmazonPriceTable.objects.all()
 

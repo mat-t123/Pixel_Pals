@@ -2,10 +2,12 @@
 # Above source uses a rougher version of this code
 
 from selectorlib import Extractor
+from django.db import models
 import requests 
 import json 
 import argparse
 import sys
+from .models import *
 
 
 

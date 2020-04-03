@@ -1,5 +1,4 @@
 from django.db import models
-#from .scraper import scrapper
 
 
 '''
@@ -9,10 +8,11 @@ from django.db import models
         Name
 '''
 
-class GraphicsCard_Manager(models.Manager):
+'''class GraphicsCard_Manager(models.Manager):
     def create_GraphicsCard(self, GraphicsCard):
         GraphicsCard = self.create(GraphicsCard=GraphicsCard)
         return GraphicsCard
+'''
 
 class GraphicsCard(models.Model):
 
@@ -20,7 +20,7 @@ class GraphicsCard(models.Model):
 
     name = models.CharField(max_length=200)
 
-    CardObject = GraphicsCard_Manager()
+    #CardObject = GraphicsCard_Manager()
 
 
 '''
@@ -29,21 +29,22 @@ class GraphicsCard(models.Model):
     Avail
 '''
 
-class AmazonPrice_Manager(models.Manager):
+'''class AmazonPrice_Manager(models.Manager):
     def create_Price(self, AmazonPriceTable):
         AmazonPriceTable = self.create(AmazonPriceTable=AmazonPriceTable)
         return AmazonPriceTable
 
     def _str_(self):
         return self.title
+'''
 
 class AmazonPriceTable(GraphicsCard):
 
    price = models.DecimalField(max_digits=25, decimal_places=2)
    timestamp =models.DateTimeField()
-   availablity = models.BooleanField()
-   #url
-   #image field?
+   availability = models.BooleanField()
+   url = models.URLField(max_length=300)
+   #image url field?
 
 
 
