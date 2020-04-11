@@ -18,12 +18,19 @@ from django.urls import path, include
 from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework import routers
+from backend import views
+
+router = routers.DefaultRouter()
+router.register(r'amazonPrices', views.AmazonView, 'amazonPrice')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
     path('backend/', include('backend.urls')),
     path('', RedirectView.as_view(url='backend/')),
     path('accounts/', include('django.contrib.auth.urls')),
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += [
