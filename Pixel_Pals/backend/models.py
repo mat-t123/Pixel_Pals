@@ -1,6 +1,23 @@
 from django.db import models
 
 
+class AmazonPriceTable(GraphicsCard):
+
+   price = models.DecimalField(max_digits=25, decimal_places=2)
+   timestamp =models.DateTimeField()
+   availability = models.BooleanField()
+   url = models.URLField(max_length=300)
+   #image url field?
+
+
+class GraphicsCard(models.Model):
+
+    ModelID = models.CharField(max_length=50)
+
+    name = models.CharField(max_length=200)
+
+    #CardObject = GraphicsCard_Manager()
+
 '''
     Graphics card
     
@@ -13,14 +30,6 @@ from django.db import models
         GraphicsCard = self.create(GraphicsCard=GraphicsCard)
         return GraphicsCard
 '''
-
-class GraphicsCard(models.Model):
-
-    ModelID = models.CharField(max_length=50)
-
-    name = models.CharField(max_length=200)
-
-    #CardObject = GraphicsCard_Manager()
 
 
 '''
@@ -37,18 +46,6 @@ class GraphicsCard(models.Model):
     def _str_(self):
         return self.title
 '''
-
-class AmazonPriceTable(GraphicsCard):
-
-   price = models.DecimalField(max_digits=25, decimal_places=2)
-   timestamp =models.DateTimeField()
-   availability = models.BooleanField()
-   url = models.URLField(max_length=300)
-   #image url field?
-
-
-
-
 
 
 '''
