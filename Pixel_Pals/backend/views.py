@@ -5,6 +5,10 @@ from rest_framework.decorators import api_view
 from .serializers import *
 from .models import *
 
+#the viewsets class provides the CRUD operations 
+#these created classes specify which serializer 
+#and which dataset to use
+
 class AmazonView(viewsets.ModelViewSet):
     serializer_class = amazonSerializer
     queryset = AmazonPriceTable.objects.all()
