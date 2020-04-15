@@ -9,3 +9,6 @@ class AmazonView(viewsets.ModelViewSet):
     serializer_class = amazonSerializer
     queryset = AmazonPriceTable.objects.all()
 
+class GraphicsCardView(viewsets.ModelViewSet):
+    serializer_class = GraphicCardSerializer
+    queryset = GraphicsCard.objects.all()
