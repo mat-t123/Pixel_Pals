@@ -10,3 +10,7 @@ To save any new modules: `pip freeze > requirements.txt`
 
 
 Run program `python3 manage.py runserver`
+
+
+
+Make superuser: `python3 manage.py createsuperuser`
