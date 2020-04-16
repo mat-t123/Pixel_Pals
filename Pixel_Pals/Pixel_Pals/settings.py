@@ -101,7 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+    }, 
 ]
 
 
@@ -127,7 +127,7 @@ STATIC_URL = '/static/'
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
 
- # whitelist localhost:3000 because that's where frontend will be served
-CORS_ORIGIN_WHITELIST = (
-         'localhost:3000/'
-     )
+# whitelist localhost:3000 because that's where frontend will be served
+#CORS_ORIGIN_WHITELIST = (
+#        'localhost:3000/'
+#)
