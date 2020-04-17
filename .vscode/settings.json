@@ -3,5 +3,12 @@
     "python.linting.pylintEnabled": false,
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": false,
-    "python.linting.pylamaEnabled": true
+    "python.linting.pylamaEnabled": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ]
 }
