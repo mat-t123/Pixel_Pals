@@ -5,12 +5,14 @@ import React from 'react';
 import MainSearch from './MainSearch';
 import CardDisplay from './CardDisplay';
 import Nav from './Nav';
+import 'bulma/css/bulma.css'
 
 //add react component to allow the switching between pages within the app
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 //import css bulma
-import 'react-bulma-components/dist/react-bulma-components.min.css';
+
+
 
 //render the app
 function App() {
