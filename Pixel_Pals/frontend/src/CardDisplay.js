@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-//import './App.css'
 import Axios from 'axios'
 
 //obtain TypeScript typings for intellisense

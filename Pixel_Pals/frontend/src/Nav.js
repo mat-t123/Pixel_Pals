@@ -1,21 +1,26 @@
 import React from 'react'
-import './App.css'
 import { Link } from "react-router-dom";
+import { Navbar } from "react-bulma-components";
 
 export default function Nav() {
 
-    const navLinkStyle = {
-        color: 'white'
-    };
-
     return (
-        <nav className ="main-nav">
-            <h3>Card Tracker</h3>
-            <ul className="navbar-links">
-                <Link style={navLinkStyle} to="/">
-                    <li>Home</li>
+        <Navbar>
+            {/*Navbar brand contains the logo at the right of the navbar */}
+            <Navbar.Brand>
+                <Link to="/">
+                    <Navbar.Item>
+                    Pixel Pal Card Tracker
+                    </Navbar.Item>
                 </Link>
-            </ul>
-      </nav>
+            </Navbar.Brand>
+
+            <Navbar.Menu>
+                <Navbar.Dropdown>
+                    Account
+                </Navbar.Dropdown>
+            </Navbar.Menu>
+        </Navbar>
+
     ) 
 }
