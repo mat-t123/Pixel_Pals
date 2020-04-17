@@ -10,7 +10,7 @@ from .models import *
 #and which dataset to use
 
 class AmazonView(viewsets.ModelViewSet):
-    serializer_class = amazonSerializer
+    serializer_class = AmazonSerializer
     queryset = AmazonPriceTable.objects.all()
 
 class GraphicsCardView(viewsets.ModelViewSet):

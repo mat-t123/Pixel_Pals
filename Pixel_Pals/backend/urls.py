@@ -11,8 +11,8 @@ from django.urls import path, include
 from rest_framework import routers
 from backend import views
 
-router = routers.DefaultRouter()
-router.register(r'backend', views.GraphicsCardView, 'backend')
+#router = routers.DefaultRouter()
+#router.register(r'backend', views, 'backend')
 
 urlpatterns = [
     #path('admin/', admin.site.urls), path('api/', include(router.urls))

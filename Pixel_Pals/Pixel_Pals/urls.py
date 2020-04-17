@@ -23,6 +23,7 @@ from backend import views
 
 router = routers.DefaultRouter()
 router.register(r'amazonPrices', views.AmazonView, 'amazonPrice')
+router.register(r'graphicsCards', views.GraphicsCardView, 'graphicsCards')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -2,14 +2,13 @@ from django.db import models
 
 class GraphicsCard(models.Model):
 
-    model_id = models.CharField(max_length=50, default='')
+    model_id = models.CharField(max_length=50, default='', primary_key=True)
     name = models.CharField(max_length=200)
     image_url = models.URLField(default='')
 
     def __str__(self):
         return super().__str__()
 
-    #CardObject = GraphicsCard_Manager()
 
 
 class AmazonPriceTable(models.Model):
