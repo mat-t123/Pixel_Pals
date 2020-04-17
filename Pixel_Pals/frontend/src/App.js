@@ -20,10 +20,12 @@ function App() {
     <Router> 
       <div className ="App">
         <Nav />
-        <Switch>
-          <Route path="/" exact component ={MainSearch}/>
-          <Route path="/cardDisplay" exact component ={CardDisplay}/> 
-        </Switch> 
+        <section className="section">
+          <Switch>
+            <Route path="/" exact component ={MainSearch}/>
+            <Route path="/cardDisplay" exact component ={CardDisplay}/> 
+          </Switch> 
+        </section>
       </div>
     </Router> 
   ); 
