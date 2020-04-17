@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route path="/" exact component ={MainSearch}/>
           <Route path="/cardDisplay" exact component ={CardDisplay}/> 
-        </Switch>
+        </Switch> 
       </div>
     </Router> 
   ); 
