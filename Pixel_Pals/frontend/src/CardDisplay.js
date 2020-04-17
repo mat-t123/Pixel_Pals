@@ -24,29 +24,22 @@ export default function CardDisplay() {
     
 
     return ( 
-    <div>
-        <h3>Card Result Page</h3>
-        <table className="card-result-container">
-            <tbody>
-                {/* This is a table row */}
-                <tr>
-                    {/* This is a table cell */}
-                    <td className="card-image-container">
-                        {/*TODO: Create placeholder image if card has no picture*/}
-                        <img width="190" alt="Card Picture" src="/gcard.jpg"/>
-                    </td>
-                    <td className="card-details">
-                        <p className="card-name">Card Name: {cards[0].name}</p>
-                        <p className="card-details">Card Details</p>
-                    </td>
-                </tr>
-                
-                    <tr className="button-container">
-                        <button className="watchlist-button">Add to Watchlist</button>
-                    </tr>
-                
-            </tbody>
-        </table>
-    </div>
+    
+        <div className="level">
+            <div className="level-left">
+                <div className="box">
+                    <figure className="image is-128x128">    
+                        <img src="/gcard.jpg" alt=""/>
+                    </figure>
+                </div>
+            </div>
+
+            <div className="level-right">
+                <div className="level-item">
+                there is an image
+                </div>
+            </div>
+
+        </div>
     )
 }
