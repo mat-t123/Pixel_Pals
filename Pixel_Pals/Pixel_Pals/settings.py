@@ -128,6 +128,8 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/'
 
 # whitelist localhost:3000 because that's where frontend will be served
-#CORS_ORIGIN_WHITELIST = (
-#        'localhost:3000/'
-#)
+CORS_ORIGIN_WHITELIST = (
+        #'http://localhost:8000'
+)
+
+CORS_ORIGIN_ALLOW_ALL = True
