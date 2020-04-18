@@ -5,19 +5,22 @@ export default function Nav() {
 
     return (
         
-        <div className="navbar is-light">
+        <nav className="navbar is-light" >
             
             <div className="navbar-brand">
-                <Link to="/">
-                    <div className="navbar-item">
-                        Card Tracker
-                    </div>
-                </Link>
+                <div className="navbar-item">
+                    <strong>Pixel Pals</strong>
+                </div>
             </div>
 
-            <div className="navbar-start"></div>
+            <div className="navbar-menu">
+            
+                <div className="navbar-start">
+                    <a href="/" className="navbar-item">
+                        Home  
+                    </a>
+                </div>
 
-            <div className="narbar-menu">
                 <div className="navbar-end">
                     <div className="navbar-item">
                         <div className="buttons">
@@ -28,7 +31,7 @@ export default function Nav() {
                 </div>
             </div>
 
-        </div>
+        </nav>
 
     ) 
 }

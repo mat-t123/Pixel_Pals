@@ -10,7 +10,7 @@ export default function MainSearch() {
                 <div className="column is-one-fifth"></div>
                 <div className="column">
 
-                    <div class="field">
+                    <div className="field">
                         <div class="control">
                             <input class="input" type="text" placeholder="Search for cards..."></input>
                         </div>
