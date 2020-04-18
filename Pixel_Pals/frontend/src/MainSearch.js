@@ -1,19 +1,32 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import 'react-bulma-components/dist/react-bulma-components.min.css';
-import { Button } from 'react-bulma-components';
-//import './App.css';
 
 export default function MainSearch() {
     return (
-        <div>
-            <input type="search" className="main-search-bar" placeholder="Search for cards.."></input>
-            <Link to="/cardDisplay">
-                <Button color="primary" outlined rounded size ="small">
-                    search
-                </Button>
-            </Link>
+
+        <div className="container">
+
+            <div className="columns">
+                <div className="column is-one-fifth"></div>
+                <div className="column">
+
+                    <div className="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Search for cards..."></input>
+                        </div>
+                    </div>
+
+                    <Link to="/cardDisplay">
+                        <div className="button is-small is-primary is-outlined is-rounded">
+                            search
+                        </div>
+                    </Link>
+
+                </div>
+                <div className="column is-one-fifth"></div>
+            </div>
             
-        </div> 
-    )
+        </div>
+
+    )   
 }
