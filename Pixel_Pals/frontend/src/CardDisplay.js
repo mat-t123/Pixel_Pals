@@ -69,7 +69,7 @@ export default function CardDisplay() {
                             <dd>
                                 {cards[0].card_id}
                             </dd>
-                            <dt><strong>manufacturer</strong></dt>
+                            <dt><strong>Manufacturer</strong></dt>
                             <dd>
                                 {cards[0].manufacturer}
                             </dd>
