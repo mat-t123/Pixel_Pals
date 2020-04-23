@@ -18,11 +18,12 @@ class AmazonPriceTable(models.Model):
     timestamp = models.DateTimeField(default='')
     availability = models.BooleanField(default='')
     url = models.URLField(max_length=300)
-   
+
     def __str__(self):
       return super().__str__()
 
    #image url field?
+
 
 
 '''
@@ -52,18 +53,4 @@ class AmazonPriceTable(models.Model):
 
     def _str_(self):
         return self.title
-'''
-
-
-'''
-    newegg price table
-'''
-
-
-'''
-    ideal data
-    
-    lowest price
-        Url
-        Available
 '''

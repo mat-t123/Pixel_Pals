@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function Nav() {
-
-    return (
-        
-        <nav className="navbar is-light" >
+class Nav extends React.Component{
+    render(){
+        return(
+            <nav className="navbar is-light" >
             
             <div className="navbar-brand">
                 <div className="navbar-item">
@@ -32,6 +31,9 @@ export default function Nav() {
             </div>
 
         </nav>
-
-    ) 
+        );
+    }
 }
+
+
+export default Nav

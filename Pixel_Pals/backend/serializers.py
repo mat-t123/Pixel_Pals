@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import *
+from backend.models import *
 
 #this file converts model instances into JSON, in order for the front end 
 #(react) can work with the received data easily. 

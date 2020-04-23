@@ -5,19 +5,33 @@ import React from 'react';
 import MainSearch from './MainSearch';
 import CardDisplay from './CardDisplay';
 import Nav from './Nav';
+//import css framework 'Bulma'
 import 'bulma/css/bulma.css'
 
 //add react component to allow the switching between pages within the app
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-//import css bulma
+
+class App extends React.Component{
+
+  //constructor for the main app component
+  constructor(props){
+    super(props);
+    this.state = {
+      cards: [
+        "model_1",
+        "model_2"
+      ]
+    }
+  }
 
 
+  //render function from react, written in JSX
+  render() 
+  {
+    return (
 
-//render the app
-function App() {
-  return (
-    <Router> 
+      <Router> 
       <div className ="App">
         <Nav />
         <section className="section">
@@ -28,7 +42,10 @@ function App() {
         </section>
       </div>
     </Router>  
-  ); 
-}       
+
+    );
+  }
+}     
 
 export default App;
+
