@@ -19,12 +19,11 @@ class CardDisplay extends React.Component{
         }
     }
 
-
     componentWillMount(){
         let data = {};
 
         axios.get("http://127.0.0.1:8000/api/graphicsCards/VCG2080T11BLMPB")
-        .then(function (response){
+        .then((response) => {
 
             data = response.data;
             console.log(data);
@@ -79,11 +78,11 @@ class CardDisplay extends React.Component{
                                     <dl>
                                         <dt><strong>Model</strong></dt>
                                         <dd>
-                                            
+                                            {this.state.cardData.model_id}
                                         </dd>
                                         <dt><strong>Manufacturer</strong></dt>
                                         <dd>
-                                            Manufacturer
+                                            manufacturer
                                         </dd>
                                         <dt><strong>GPU Speed</strong></dt>
                                         <dd>
@@ -134,7 +133,7 @@ class CardDisplay extends React.Component{
                 )
             }
             else{
-                return <div>{this.state.cardName}</div>
+                return null
             }
     }    
 }
