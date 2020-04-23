@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Link, withRouter} from 'react-router-dom';
+import {Link, withRouter, Redirect} from 'react-router-dom';
 import Axios from 'axios'
 import MainSearch from './MainSearch';
 
@@ -19,8 +19,11 @@ class CardDisplay extends React.Component{
         //along with a flag to determine if the data has been received
         this.state={
             cardData: {},
-            promiseResolved: false
+            promiseResolved: false,
+            failedSearch: false
         }
+
+        this.handleSearch = this.handleSearch.bind(this)
     }
 
     componentWillMount(){
@@ -42,16 +45,58 @@ class CardDisplay extends React.Component{
             });
  
         })
-        .catch(function (error){
+        .catch((error) => {
             console.log(error);
+
+            this.setState({
+                failedSearch: true
+            })
+
         });
     }
 
-    updateSearch(){
+    //runs new search from input given in this component's searchbar
+    handleSearch = (e) => {
+        //if the input is not empty and the enter button was pressed
+        if(e.keyCode === 13 && e.target.value !== ""){
+            console.log(e.target.value);
 
+            //save the search term value given in search bar
+            const searchTerm = e.target.value;
+
+            //create empty object to hold the data
+            let data = {};
+
+            axios.get("http://127.0.0.1:8000/api/graphicsCards/" + searchTerm)
+            .then((response) => {
+
+                data = response.data;
+                console.log(data);
+
+                this.setState({
+                    cardData: data,
+                    promiseResolved: true
+                });
+    
+            })
+            .catch((error) => {
+                console.log(error);
+
+                this.setState({
+                    failedSearch: true
+                })
+
+            });
+        }
     }
 
     render(){
+
+        if(this.state.failedSearch){
+            return(
+                <Redirect to="/" />
+            )
+        }
 
         if(this.state.promiseResolved){
             return(
@@ -63,7 +108,7 @@ class CardDisplay extends React.Component{
                             <div className="field has-addons has-addons-fullwidth">
     
                                 <div className="control">
-                                    <input type="text" className="input" placeholder="Search for cards..."/>
+                                    <input id="searchbar" type="text" className="input" onKeyDown={this.handleSearch} placeholder="Search for cards..."/>
                                 </div>
                                 <Link to="/cardDisplay">
                                     <div className="control">

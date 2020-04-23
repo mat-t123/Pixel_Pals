@@ -25,7 +25,7 @@ class MainSearch extends React.Component{
         if(e.keyCode === 13 && e.target.value !== ""){
             const newSearch = e.target.value;
             this.setState({
-                searchTerm: e.target.value
+                searchTerm: e.target.value 
             });
             this.props.onMainSearch(newSearch);
         }
