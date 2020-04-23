@@ -40,12 +40,18 @@ class App extends React.Component{
   //the router component lists the components in the directory so that the can referenced by other components
   render() 
   {
-    
     if(this.state.redirect) 
     {
       {console.log(this.state.redirect)}
-      
-      return <Redirect to ={this.state.redirect} />
+      this.setState({
+        redirect: ""
+      })
+      return <Redirect to ={{
+        pathname: this.state.redirect,
+        state: {
+          card: this.state.cardName
+        }
+      }} />
     }
 
     return (  
@@ -72,5 +78,5 @@ class App extends React.Component{
   }
 }     
 
-export default withRouter(App)
+export default App
 

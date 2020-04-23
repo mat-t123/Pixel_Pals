@@ -6,14 +6,18 @@ import MainSearch from './MainSearch';
 //obtain TypeScript typings for intellisense
 const axios = require('axios').default;
 
+//cardname
+//VCG2080T11BLMPB
+
 class CardDisplay extends React.Component{
     
     constructor(props){
 
         super(props);
 
+        //the initial state will contain the empty card data object 
+        //along with a flag to determine if the data has been received
         this.state={
-            cardName: "VCG2080T11BLMPB",
             cardData: {},
             promiseResolved: false
         }
@@ -22,7 +26,11 @@ class CardDisplay extends React.Component{
     componentWillMount(){
         let data = {};
 
-        axios.get("http://127.0.0.1:8000/api/graphicsCards/VCG2080T11BLMPB")
+        //grab the card name from props 
+        const cardName = this.props.location.state.card
+
+        //concatenate given card name into axios get request to receive json object from the database
+        axios.get("http://127.0.0.1:8000/api/graphicsCards/" + cardName)
         .then((response) => {
 
             data = response.data;
@@ -37,6 +45,10 @@ class CardDisplay extends React.Component{
         .catch(function (error){
             console.log(error);
         });
+    }
+
+    updateSearch(){
+
     }
 
     render(){
@@ -56,7 +68,7 @@ class CardDisplay extends React.Component{
                                 <Link to="/cardDisplay">
                                     <div className="control">
                                         <button className="button is-primary is-outlined">
-                                            search
+                                            search 
                                         </button>
                                     </div>
                                 </Link>
@@ -70,7 +82,7 @@ class CardDisplay extends React.Component{
     
                             <div className="tile is-child box">
                                 <figure className="image is-128x128">    
-                                    <img src="/gcard.jpg" alt=""/>
+                                    <img src={this.state.cardData.image_url} alt=""/>
                                 </figure>
                             </div>
                             <div className="tile is-child">
@@ -82,23 +94,23 @@ class CardDisplay extends React.Component{
                                         </dd>
                                         <dt><strong>Manufacturer</strong></dt>
                                         <dd>
-                                            manufacturer
+                                            {this.state.cardData.manufacturer}
                                         </dd>
                                         <dt><strong>GPU Speed</strong></dt>
                                         <dd>
-                                            gpu clock speed
+                                            {this.state.cardData.gpu_speed}
                                         </dd>
                                         <dt><strong>Memory Type</strong></dt>
                                         <dd>
-                                            memory type
+                                            {this.state.cardData.memory_type}
                                         </dd>
                                         <dt><strong>Memory-Bandwidth</strong></dt>
                                         <dd>
-                                            Memory Bandwidth
+                                            {this.state.cardData.memory_bandwidth}
                                         </dd>
                                         <dt><strong>Bus Size</strong></dt>
                                         <dd>
-                                            memory interface
+                                            {this.state.cardData.memory_type}
                                         </dd>
                                     </dl>
                                 </div>
@@ -110,7 +122,7 @@ class CardDisplay extends React.Component{
                             <div className="tile is-child">
                                 <div className="content is-medium">
                                     <h1>
-                                        name
+                                        {this.state.cardData.name}
                                     </h1>
                                 </div>
                             </div>
