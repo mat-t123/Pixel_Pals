@@ -13,4 +13,6 @@ class AmazonSerializer(serializers.ModelSerializer):
 class GraphicCardSerializer(serializers.ModelSerializer):
     class Meta:
         model = GraphicsCard
-        fields = ('model_id', 'name', 'image_url')
+        fields = ('model_id', 'name', 'manufacturer', 'gpu_speed',
+        'memory_type', 'memory_bandwidth',
+        'bus_size', 'image_url')

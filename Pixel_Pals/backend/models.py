@@ -4,6 +4,11 @@ class GraphicsCard(models.Model):
 
     model_id = models.CharField(max_length=50, default='', primary_key=True)
     name = models.CharField(max_length=200)
+    manufacturer = models.CharField(max_length=200, default='')
+    gpu_speed = models.CharField(max_length=50, default='')
+    memory_type = models.CharField(max_length=50, default='')
+    memory_bandwidth = models.CharField(max_length=50, default='')
+    bus_size = models.CharField(max_length=50, default='')
     image_url = models.URLField(default='')
 
     def __str__(self):
