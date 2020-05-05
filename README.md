@@ -19,8 +19,6 @@ To run the frontend open new Terminal, `cd Pixel_Pals/frontend`
 
 Then run `npm start`
 
-If you get errno 126, run`yarn add node-cron@2.0.3`
-
 To run the scraper use `python3 Pixel_Pals/manage.py scraper`
 
 If you are on a windows machine switch `python3` for `py`
