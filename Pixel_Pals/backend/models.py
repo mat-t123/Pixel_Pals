@@ -14,6 +14,11 @@ class GraphicsCard(models.Model):
     def __str__(self):
         return super().__str__()
 
+    class Meta:
+        ordering = ['name']
+
+    class Admin:
+        pass
 
 
 class AmazonPriceTable(models.Model):
@@ -29,33 +34,3 @@ class AmazonPriceTable(models.Model):
 
    #image url field?
 
-
-
-'''
-    Graphics card
-    
-        Model #
-        Name
-'''
-
-'''class GraphicsCard_Manager(models.Manager):
-    def create_GraphicsCard(self, GraphicsCard):
-        GraphicsCard = self.create(GraphicsCard=GraphicsCard)
-        return GraphicsCard
-'''
-
-
-'''
-    amazon price table
-    Price URL
-    Avail
-'''
-
-'''class AmazonPrice_Manager(models.Manager):
-    def create_Price(self, AmazonPriceTable):
-        AmazonPriceTable = self.create(AmazonPriceTable=AmazonPriceTable)
-        return AmazonPriceTable
-
-    def _str_(self):
-        return self.title
-'''
